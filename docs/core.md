@@ -3,7 +3,7 @@
 > The stuff we have learnt trying to get these working. 
 
 #FOR ESX
->Note; You do NOT Need core_weapons if you have Core_Inventory
+>Note; You might not Need core_weapons if you have Core_Inventory
 
 Thanks to all the CORE staff & discord members (esp Grnphnx for the bits of code i have found to build this) 
 
