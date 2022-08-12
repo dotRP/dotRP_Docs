@@ -42,16 +42,16 @@ Thanks to all the CORE staff & discord members (esp Grnphnx for the bits of code
         return exports['core_inventory']:canCarry(inventory, name, count)
 	end
 	
->1) Import SQL File
- 2) Add an x,y Vaule to all items (this sets how much space it takes up in the inventory)
- 3) Give all Weapons the "weapons" catagory
- 4) Set all weapon names to lowercase (This changes the command from /giveweapon to /giveitem 
+>1) Import SQL File  
+ 2) Add an x,y Vaule to all items (this sets how much space it takes up in the inventory)  
+ 3) Give all Weapons the "weapons" catagory  
+ 4) Set all weapon names to lowercase (This changes the command from /giveweapon to /giveitem  
  
  ---
  
- # Weapon Purchasing
- >1) REPLACE xplayer.addWeapon(GUNNAME,0) in weapons shops to xplayer.addInventoryItem(GUNNAME, 1) - This may be need to be done in scripts like esx_police
-  2) Add the SQL File [Core Gun Parts SQL](docs/coregunparts.md) to your database (This adds attachments to the database to use as items)
+ # Weapon Purchasing  
+ >1) REPLACE xplayer.addWeapon(GUNNAME,0) in weapons shops to xplayer.addInventoryItem(GUNNAME, 1) - This may be need to be done in scripts like esx_police  
+  2) Add the SQL File [Core Gun Parts SQL](docs/coregunparts.md) to your database (This adds attachments to the database to use as items)  
   3)
   
  # Pause Menu
