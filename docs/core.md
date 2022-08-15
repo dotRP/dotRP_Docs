@@ -42,7 +42,8 @@ Thanks to all the CORE staff & discord members (esp Grnphnx for the bits of code
 
         return exports['core_inventory']:canCarry(inventory, name, count)
 	end
-	
+```
+
 >1) Import SQL File  
  2) Add an x,y Vaule to all items (this sets how much space it takes up in the inventory)  
  3) Give all Weapons the "weapons" catagory  
