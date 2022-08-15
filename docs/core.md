@@ -58,3 +58,152 @@ Thanks to all the CORE staff & discord members (esp Grnphnx for the bits of code
  
  >if your pause menu is not working, remove this line in client.lua (around 316 for me)  
 DisableControlAction(0, 199, true)
+
+# Spawning items
+>ID Is bascially slot, does not need to be adjusted 
+
+Torso = ARMS
+Texture = Item Texture
+Model = What item it is
+
+Male Tosro  
+``./giveitem PID torso 1 {"mTorso":15,"mID":11,"mTexture":1,"mModel":14}``
+Male Shirt
+``/giveitem PID tshirt 1 {"mID":8,"mTexture":1,"mModel":14}``
+Male Shoes
+``/giveitem PID shoes 1 {"mID":8,"mTexture":1,"mModel":14}``
+Male Pants
+``/giveitem PID pants 1 {"mID":8,"mTexture":1,"mModel":14}``
+
+Female Tosro  
+``./giveitem PID torso 1 {"fTorso":15,"fID":11,"fTexture":1,"fModel":14}``
+Female Shirt
+``/giveitem PID tshirt 1 {"fID":8,"fTexture":1,"fModel":14}``
+Female Shoes
+``/giveitem PID shoes 1 {"fID":8,"fTexture":1,"fModel":14}``
+Female Pants
+``/giveitem PID pants 1 {"fID":8,"fTexture":1,"fModel":14}``
+
+
+
+>Clothing IDs  
+0	Head	
+1	Masks
+6	Shoes
+8	Undershirts
+11	Tops
+
+
+
+
+
+---
+# Adding items to the store (Clothing)
+
+Male Torso
+```
+['M_Torso_27_Tex_2'] = {
+            category = false, -- 
+            label = 'M_Torso_27_Tex_2'.
+            parent = 'man_torso',
+            price = 12,
+            item = 'torso', -- Core Inventory item name or clothingCategory from qb-clothing
+			men = {id=11, model=27, texture = 2, torso = 0},
+			woman = {}
+			},
+```	
+
+Male T-Shirt 
+```
+['TS_11_TX_3'] = {
+            category = false, -- If not category its purschasable
+            label = 'TS_11_TX_3',
+            parent = 'man_shirts',
+            price = 12,
+            item = 'tshirt', -- Core Inventory item name or clothingCategory from qb-clothing
+			men = {id=8, model=11, texture = 3},
+			woman = {}
+
+          },
+```
+
+Male Pants
+```
+['M_PANTS_18_1'] = {
+               category = false, -- If not category its purschasable
+               label = 'PANTS #18',
+               parent = 'men_pants',
+               price = 200,
+               item = 'pants', -- Core Inventory item name or clothingCategory from qb-clothing
+               men = {id = 4, model = 18, texture = 1 },
+               woman = {}
+          },
+```
+
+Male Shoes
+```
+['M_SHOES_60_TXT_1'] = {
+                category = false, -- If not category its purschasable
+                label = 'M_SHOES_60_TXT_1',
+                parent = 'men_shoes',
+                price = 20,
+                item = 'shoes', -- Core Inventory item name or clothingCategory from qb-clothing
+                men {id = 6, model = 60, texture = 1 },
+                woman = {}
+           },
+```
+
+---
+
+Female Torso
+```
+['F_Torso_27_Tex_2'] = {
+            category = false, -- 
+            label = 'M_Torso_27_Tex_2'.
+            parent = 'woman_torso',
+            price = 12,
+            item = 'torso', -- Core Inventory item name or clothingCategory from qb-clothing
+			men = {},
+			woman = {id=11, model=27, texture = 2, torso = 0}
+			},
+```	
+
+Female T-Shirt 
+```
+['F_TS_11_TX_3'] = {
+            category = false, -- If not category its purschasable
+            label = 'TS_11_TX_3',
+            parent = 'woman_torso',
+            price = 12,
+            item = 'tshirt', -- Core Inventory item name or clothingCategory from qb-clothing
+			men = {},
+			woman = {id=8, model=11, texture = 3}
+
+          },
+```
+
+Female Pants
+```
+['F_PANTS_18_1'] = {
+               category = false, -- If not category its purschasable
+               label = 'PANTS #18',
+               parent = 'woman_pants',
+               price = 200,
+               item = 'pants', -- Core Inventory item name or clothingCategory from qb-clothing
+               men = {},
+               woman = {id = 4, model = 18, texture = 1 }
+          },
+```
+
+Female Shoes
+```
+['F_SHOES_60_TXT_1'] = {
+                category = false, -- If not category its purschasable
+                label = 'F_SHOES_60_TXT_1',
+                parent = 'woman_shoes',
+                price = 20,
+                item = 'shoes', -- Core Inventory item name or clothingCategory from qb-clothing
+                men {},
+                woman = {id = 6, model = 60, texture = 1}
+           },
+```
