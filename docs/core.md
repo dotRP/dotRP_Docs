@@ -12,6 +12,7 @@ Thanks to all the CORE staff & discord members (esp Grnphnx for the bits of code
 
 >ADD/REPLACE THESE FUNCTIONS IN es_extended/server/classes/player.lua
 
+```
   	function self.getInventory(minimal, inventory)
 			 inventory = inventory or 'content-' ..  self.identifier:gsub(":", "")
 
