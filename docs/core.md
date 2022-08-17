@@ -14,23 +14,23 @@ Thanks to all the CORE staff & discord members (esp Grnphnx for the bits of code
 
 ```
 function self.getInventory(minimal, inventory)
-		inventory = inventory or 'content-' ..  self.identifier:gsub(":", "")
+	inventory = inventory or 'content-' ..  self.identifier:gsub(":", "")
         return exports['core_inventory']:getInventory(inventory)
 end
 
 function self.getInventoryItem(name, inventory)
 	inventory = inventory or 'content-' ..  self.identifier:gsub(":", "")
-    return exports['core_inventory']:getItem(inventory, name)
+	return exports['core_inventory']:getItem(inventory, name)
 end
 
 function self.addInventoryItem(name, count, metadata, inventory)
 	inventory = inventory or 'content-' ..  self.identifier:gsub(":", "")
-    return exports['core_inventory']:addItem(inventory, name, count, metadata)
+	return exports['core_inventory']:addItem(inventory, name, count, metadata)
 end
 
 function self.removeInventoryItem(name, count, inventory)
 	inventory = inventory or 'content-' ..  self.identifier:gsub(":", "")
-    return exports['core_inventory']:removeItem(inventory, name, count)
+	return exports['core_inventory']:removeItem(inventory, name, count)
 end
 
 function self.canCarryItem(name, count, inventory)
