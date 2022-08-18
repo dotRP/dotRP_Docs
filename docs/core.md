@@ -204,3 +204,26 @@ Female Shoes
                 woman = {id = 6, model = 60, texture = 1}
            },
 ```
+---
+
+# Police Searching 
+
+
+Thanks too Flight Lieutenant on discord 
+```
+Police Search Function For ESX 1.1 not sure about 1.2 or above.
+replace this function in police\client\main.lua line number 667.
+Works for RNG Police too
+
+Original :-
+
+elseif action == 'body_search' then
+TriggerServerEvent('esx_policejob:message', GetPlayerServerId(closestPlayer), _U('being_searched'))
+TriggerEvent('disc-inventoryhud:search', source)
+						
+Replace to :-
+
+elseif action == 'body_search' then
+TriggerServerEvent('esx_policejob:message', GetPlayerServerId(closestPlayer), _U('being_searched'))
+TriggerServerEvent('core_inventory:server:openInventory', GetPlayerServerId(closestPlayer), 'otherplayer', x, y)
+```
