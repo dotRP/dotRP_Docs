@@ -14,8 +14,8 @@ Thanks to all the CORE staff & discord members (esp Grnphnx for the bits of code
 
 ```
 function self.getInventory(minimal, inventory)
-		inventory = inventory or 'content-' ..  self.identifier:gsub(":", "")
-        return exports['core_inventory']:getInventory(inventory)
+	inventory = inventory or 'content-' ..  self.identifier:gsub(":", "")
+    return exports['core_inventory']:getInventory(inventory)
 end
 
 function self.getInventoryItem(name, inventory)
