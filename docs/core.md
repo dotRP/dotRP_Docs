@@ -20,17 +20,17 @@ end
 
 function self.getInventoryItem(name, inventory)
 	inventory = inventory or 'content-' ..  self.identifier:gsub(":", "")
-    return exports['core_inventory']:getItem(inventory, name)
+	return exports['core_inventory']:getItem(inventory, name)
 end
 
 function self.addInventoryItem(name, count, metadata, inventory)
 	inventory = inventory or 'content-' ..  self.identifier:gsub(":", "")
-    return exports['core_inventory']:addItem(inventory, name, count, metadata)
+	return exports['core_inventory']:addItem(inventory, name, count, metadata)
 end
 
 function self.removeInventoryItem(name, count, inventory)
 	inventory = inventory or 'content-' ..  self.identifier:gsub(":", "")
-    return exports['core_inventory']:removeItem(inventory, name, count)
+	return exports['core_inventory']:removeItem(inventory, name, count)
 end
 
 function self.canCarryItem(name, count, inventory)
