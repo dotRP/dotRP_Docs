@@ -7,7 +7,7 @@ This is how you add items to core_crafting!
 ## Adding Items to the Database.  
 
 First you need to add all the items you want to use to the Database, a good way of doing this is in a CSV File! 
-[ITEMS.CSV](docs/items.csv)  
+[ITEMS.CSV](/items.csv)  
 
 
 | name                                                            | label                                        | weight                               | rare     | can\_remove | degrade\_modifier | unique   | description      | x                   | y | category                |
@@ -102,7 +102,7 @@ Ingredients = { -- Ingredients needed to craft this item
 
 > For the automaters  
 a CSV And Mailmerge works wonders here.  
-[Merger.CSV](docs/merger.csv)  
+[Merger.CSV](/merger.csv)  
 
 > Leave unsed Ingredients blank  
 Note the commas after igcounts (how many of each item used), apart from, the last item   
