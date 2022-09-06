@@ -93,7 +93,8 @@ requireBlueprint = false,
 --itemname_blueprint EXAMPLE: bandage_blueprint
 Time = 10, -- Time in seconds it takes to craft this item
 Ingredients = { -- Ingredients needed to craft this item
-['clothe'] = 2, -- item name and count, adding items that dont exist in database will crash the script
+['clothe'] = 2, -- item name and count, 
+--adding items that dont exist in database will crash the script
 ['wood'] = 1
 }
 },
@@ -106,9 +107,13 @@ a CSV And Mailmerge works wonders here.
 > Leave unsed Ingredients blank  
 Note the commas after igcounts (how many of each item used), apart from, the last item 
 
-| itemname               | level | category | isgun | jobs | jobsgrades | ammount | SuccessRate | requireBlueprint | time | Ingredient1    | ig1count | Ingredient2  | ig2count | Ingredient3       | ig3count | Ingredient4     | ig4count | Ingredient5 | ig5count | Ingredient6 | ig6count |
-| ---------------------- | ----- | -------- | ----- | ---- | ---------- | ------- | ----------- | ---------------- | ---- | -------------- | -------- | ------------ | -------- | ----------------- | -------- | --------------- | -------- | ----------- | -------- | ----------- | -------- |
-| drink\_flaming\_slater | 0     | drinks   | FALSE |      |            | 4       | 100         | FALSE            | 10   | \['kraken'\] = | 1,       | \['cola'\] = | 1,       | \['gunpowder'\] = | 1,       | \['lighter'\] = | 1       |             |          |             |          |  
+| itemname               | level | category | isgun | jobs | jobsgrades | ammount | SuccessRate | requireBlueprint | time | Ingredient1    | ig1count | Ingredient2  | ig2count |
+| ---------------------- | ----- | -------- | ----- | ---- | ---------- | ------- | ----------- | ---------------- | ---- | -------------- | -------- | ------------ | -------- |
+| drink\_flaming\_slater | 0     | drinks   | FALSE |      |            | 4       | 100         | FALSE            | 10   | \['kraken'\] = | 1,       | \['cola'\] = | 1,       | 
+This is cut off at item 2 for formatting, see CSV for full example, i do not see why it couldnt be more than 6 items!
+
+
+
 
 > Then you should have a Mailmerge that looks something like this
 
