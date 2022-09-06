@@ -31,7 +31,7 @@ This could also be added to esx_basicneeds
 ESX.RegisterUsableItem('cola', function(source)  // Cola is name of item in DB
     local xPlayer = ESX.GetPlayerFromId(source)
     xPlayer.removeInventoryItem('cola', 1) // Cola is name of item in DB
-    TriggerClientEvent('esx_status:add', source, 'thirst', 220000) //fill up thirst 
+    TriggerClientEvent('esx_status:add', source, 'thirst', 220000) //fill thirst 
     TriggerClientEvent('esx_basicneeds:onDrink', source)
     TriggerClientEvent('esx:showNotification', source, _U('used_cola')) 
     //used_cola (for translations)  
@@ -42,8 +42,8 @@ end)
 ESX.RegisterUsableItem('whiskey', function(source) //Whiskey is db item name
     local xPlayer = ESX.GetPlayerFromId(source)
     xPlayer.removeInventoryItem('whiskey', 1) //Whiskey is db item name
-    TriggerClientEvent('esx_status:add', source, 'drunk', 220000) //How shitfaced 
-    TriggerClientEvent('esx_status:add', source, 'thirst', 220000) //fill up thirst
+    TriggerClientEvent('esx_status:add', source, 'drunk', 220000) //Shitfaced 
+    TriggerClientEvent('esx_status:add', source, 'thirst', 220000) //fill thirst
     TriggerClientEvent('esx_optionalneeds:onDrink', source)
     TriggerClientEvent('esx:showNotification', source, _U('used_whiskey')) 
     //used_whiskey (for translations)
@@ -54,7 +54,7 @@ end)
 ESX.RegisterUsableItem('fishbait', function(source) //fishbait is item name in db
     local xPlayer = ESX.GetPlayerFromId(source)
     xPlayer.removeInventoryItem('fishbait', 1) //fishbait is item name in db
-    TriggerClientEvent('esx_status:add', source, 'hunger', 8000) //fill up food
+    TriggerClientEvent('esx_status:add', source, 'hunger', 8000) //fill food
     TriggerClientEvent('esx_basicneeds:onEat', source)
     TriggerClientEvent('esx:showNotification', source, _U('used_fishbait')) 
     //used_fishbait (for translations)
