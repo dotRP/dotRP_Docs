@@ -105,11 +105,13 @@ a CSV And Mailmerge works wonders here.
 [Merger.CSV](docs/merger.csv)  
 
 > Leave unsed Ingredients blank  
-Note the commas after igcounts (how many of each item used), apart from, the last item 
+Note the commas after igcounts (how many of each item used), apart from, the last item   
 
 | itemname               | level | category | isgun | jobs | jobsgrades | ammount | SuccessRate | requireBlueprint | time | Ingredient1    | ig1count | Ingredient2  | ig2count |
 | ---------------------- | ----- | -------- | ----- | ---- | ---------- | ------- | ----------- | ---------------- | ---- | -------------- | -------- | ------------ | -------- |
-| drink\_flaming\_slater | 0     | drinks   | FALSE |      |            | 4       | 100         | FALSE            | 10   | \['kraken'\] = | 1,       | \['cola'\] = | 1,       | 
+| drink\_flaming\_slater | 0     | drinks   | FALSE |      |            | 4       | 100         | FALSE            | 10   | \['kraken'\] = | 1,       | \['cola'\] = | 1,       |  
+
+
 This is cut off at item 2 for formatting, see CSV for full example, i do not see why it couldnt be more than 6 items!
 
 
