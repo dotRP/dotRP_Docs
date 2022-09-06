@@ -2,7 +2,7 @@
 
 > The stuff we have learnt trying to get these working.  
 
-#FOR ESX
+## FOR ESX
 >Note; You might not Need core_weapons if you have Core_Inventory
 
 Thanks to all the CORE staff & discord members (esp Grnphnx for the bits of code i have found to build this) 
@@ -46,17 +46,17 @@ end
  
  ---
  
- # Weapon Purchasing  
+## Weapon Purchasing  
  >1) REPLACE xplayer.addWeapon(GUNNAME,0) in weapons shops to xplayer.addInventoryItem(GUNNAME, 1) - This may be need to be done in scripts like esx_police  
   2) Add the SQL File [Core Gun Parts SQL](docs/coregunparts.md) to your database (This adds attachments to the database to use as items)  
   3)
   
- # Pause Menu
+## Pause Menu
  
  >if your pause menu is not working, remove this line in client.lua (around 316 for me)  
 DisableControlAction(0, 199, true)
 
-# Spawning items
+## Spawning items
 >ID Is bascially slot, does not need to be adjusted  
 
 Torso = ARMS  
