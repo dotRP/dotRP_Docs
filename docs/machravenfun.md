@@ -24,7 +24,7 @@ end)
 > 1)Function Name - Usable Items  
 > 2)Script Location - server/usableitems.lua (Tebex encrypted)  
 > 3)Description - This allows you to add useable items in a simpler config file, rather than having to add 500 Useable item chunks as above  
-> 4)UseableItemsDebug - Set this to true to print item registration attempts to the SERVER CONSOLE 
+> 4)UseableItemsDebug - Set this to true to print item registration attempts to the SERVER CONSOLE  
 > 5)Note this uses the default ESX Notification, you can change this in "resources\es_extended\client\functions.lua" (which is a good way of globally updating this)  
 > 6)The numbers is these docs are low for formatting reasons, 250000 is a reasonable number, 250 IS NOT
 
@@ -57,11 +57,11 @@ OnUseNotify - What text to display when used
 > DBName - The item name in the database  
 Type - Always "alcohol" (lowercase)  
 Thirst - How much Thirst to fill 250000 is about a quarter under normal settings  
-drunkness - How Drunk to get someone, 100000 is a good value  
+Drunkness - How Drunk to get someone, 100000 is a good value  
 OnUseNotify - What text to display when used  
 
 ```lua
-{dbname = "whiskey",type="alcohol",thirst=250,drunkness=300,OnUseNotify="Dang that kicks!"},
+{dbname = "whiskey",type="alcohol",thirst=250,drunkness=300,OnUseNotify="Hmmm"},
 ```
 
 #### Meal
@@ -73,7 +73,7 @@ Thirst - How much Thirst to fill 250000 is about a quarter under normal settings
 OnUseNotify - What text to display when used  
 
 ```lua
-{dbname = "the_works",type="meal",hunger=300,thirst=320,OnUseNotify="Dang that kicks!"},
+{dbname = "the_works",type="meal",hunger=300,thirst=320,OnUseNotify="Yummy!"},
 ```
 
 ### This should then look like this  
@@ -82,10 +82,9 @@ OnUseNotify - What text to display when used
 UseableItemsDebug = false,
 UseableItems = {
 {dbname = "burger",type="food",hunger=250,OnUseNotify="Hmmm Burger"},
-{dbname = "icedtea",type="drink",thirst=250,OnUseNotify="Cold Tea?},
-{dbname = "whiskey",type="alcohol",thirst=250,drunkness=300,OnUseNotify="Dang that kicks!"},
-{dbname = "the_works",type="meal",hunger=300,thirst=320,OnUseNotify="Yum}, ------- delete 
-
+{dbname = "icedtea",type="drink",thirst=250,OnUseNotify="Cold Tea?"},
+{dbname = "whiskey",type="alcohol",thirst=250,drunkness=300,OnUseNotify="Hmmm"},
+{dbname = "the_works",type="meal",hunger=300,thirst=320,OnUseNotify="Yum"},
 },
 --Note, set to low numbers for formatting reasons, 250000 is much better choice
 ```
