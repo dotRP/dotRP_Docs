@@ -1,10 +1,6 @@
-# MACH & ONYX FiveM Functions
+# Usable items  
 
----
-
-## Usable items  
-
-This function replaces the need to add the snipped bellow for every item you want to use, the items still need to to be [IN THE DATABASE](/dbitems.md).  
+This function replaces the need to add the snipped bellow for every item you want to use, the items still need to to be [IN THE DATABASE](../core/dbitems.md).  
 
 ```lua
 ESX.RegisterUsableItem('fishbait', function(source) //fishbait db item name 
@@ -19,7 +15,7 @@ end)
 
 > Head to the useable items section in the cfg file.  
 
-### About the file  
+## About the file  
 
 > 1)Function Name - Usable Items  
 > 2)Script Location - server/usableitems.lua (Tebex encrypted)  

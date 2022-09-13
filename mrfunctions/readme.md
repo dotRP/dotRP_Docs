@@ -4,11 +4,19 @@ Please read our [Documentation](https://docs.dotroleplay.com/mrfunctions) For he
 
 ---
 
+## Usable Items  
+
+This allows you to create food/drink/meal/booze items!  
+Making it a simpler and more centeral location to update these items  
+[Usable Items](/usableitems.md)
+
+---
+
 ## Speed Limiter  
 
 This allows you to set the max speed of each vehicle class, or set it to be unlimited.  
 This is a hard cap which will stop the vehicle from being able to exceed that speed.  
-[Speed Docs](https://docs.dotroleplay.com/mrfunctions/speed) ***caveats***.  
+[Speed Docs](/speed.md) ***caveats***.  
 
 ---
 
@@ -18,7 +26,7 @@ This is a hard cap which will stop the vehicle from being able to exceed that sp
 
 This allows you to set if trains spawn and how often.  
 There is not much more to it than that lol.  
-[Train Docs](https://docs.dotroleplay.com/mrfunctions/trains)  
+[Train Docs](/trains.md)  
 
 ---
 
@@ -26,7 +34,7 @@ There is not much more to it than that lol.
 
 This sets the multipliers for how many peds, cars etc are on the road.  
 You will also be able to set if boats or garbage trucks spawn (TODO)  
-[Traffic](https://docs.dotroleplay.com/mrfunctions/traffic)  
+[Traffic](/traffic.md)  
 
 ---
 
@@ -34,7 +42,7 @@ You will also be able to set if boats or garbage trucks spawn (TODO)
 
 This allows you to set a key which wibbles your body when dead, this resets your location in the world.  
 This is good for when bodies sometimes go missing when someone dies and EMS arrives  
-[Dead Finder](https://docs.dotroleplay.com/mrfunctions/dead) ***caveats*** - Can trip some anticheat.  
+[Dead Finder](/dead.md) ***caveats*** - Can trip some anticheat.  
 
 ---
 
