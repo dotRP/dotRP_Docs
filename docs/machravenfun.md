@@ -1,6 +1,11 @@
 # MACH & ONYX FiveM Functions
 
 ---
+## TODO  
+NORMAL BLIPS in blip function
+
+
+---
 
 ## Usable items  
 
@@ -90,3 +95,25 @@ UseableItems = {
 ```
 
 ---
+
+## Blips  
+
+This script allows you to add radial (Circle) Zones, Area (Square) Zone and Blips
+
+> Head to the Blips section in the cfg file.  
+
+### About the file  
+
+
+> 1)Function Name - Blips  
+> 2)Script Location - client/blips.lua (Tebex encrypted)    
+> 3)Description - This allows you to add blips are zones to the map  
+> 4)Blip- Set this to true to print Blip creation attempts to CLIENT Console  
+
+
+#### Radial Blips
+
+#### Area Blips
+
+
+#### Normal Blips
