@@ -63,9 +63,6 @@ Must be a INT! -- This means the number must be a whole number!
 **--DEF** This is what the default recommended values are! /n
 --DEF 300
 
-
-
-
 ```Lua
 --SPEED LIMITER (THIS WILL BE THE Functions NAME)
 --FILE
