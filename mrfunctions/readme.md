@@ -40,7 +40,7 @@ This is good for when bodies sometimes go missing when someone dies and EMS arri
 
 ---
 
-### Code Commenting:  
+### Code Commenting  
 
 This explains how the code is commented at the top of the config blocks  
 
