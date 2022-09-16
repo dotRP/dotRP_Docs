@@ -2,7 +2,7 @@
 
 ---
 
-[Police Procedures](/police)
+[Police Procedures](/ers/police)
 
 
 ---
@@ -32,7 +32,7 @@ This is how it should be for larger day to day incidents too
 
 
 ## Air units.
-See [Flight Training](/flight)
+See [Flight Training](/ers/flight)
 For Shared Units such as Air x, the commanding dept will be the incident commander. So for a bank robbery Air X will be under command of LSPD, And in a fire it would be command of LSFR.
 This is irrelevant of the pilot or there rank, this does not affect the normal rights of a pilot to say hell no.  
 ERS Aircraft will under the general command of an ERS command centre.  
@@ -72,7 +72,7 @@ Channel 12 is for tow
 Channel 13 + is public radio space  
 
 
-
+```
 +---------------+--------------+------------------------------------------------------------------------+-----------+------------+
 |Channel Number | Channel Name | Usage                                                                  | Dept      | Encryption |
 +---------------+--------------+------------------------------------------------------------------------+-----------+------------+
@@ -98,14 +98,14 @@ Channel 13 + is public radio space
 +---------------+--------------+------------------------------------------------------------------------+-----------+------------+
 | 11            | Com 5 - LSPD | Private Police Channel - Not for common use                            | LSPD      | YES        |
 +---------------+--------------+------------------------------------------------------------------------+-----------+------------+
-
+```
 
 ## Radio Callsigns 
 
 ### Air Units
 
 
-
+```
 +--------------+---------------------------------+------------------------------------------------+----------------+---------------------+
 | Callsign     | Vehicle                         | Usage                                          | Dept           | Commander           |
 +--------------+---------------------------------+------------------------------------------------+----------------+---------------------+
@@ -125,12 +125,12 @@ Channel 13 + is public radio space
 +--------------+---------------------------------+------------------------------------------------+----------------+---------------------+
 | Victor X     | Any                             | VIP Transport, Can be given to its escorts too | LSPD/ERS/SA    | Air Traffic Control |
 +--------------+---------------------------------+------------------------------------------------+----------------+---------------------+
-
+```
 
 
 ### Police  
 
-
+```
 +--------------+-----------+-------+----------------------------------+
 | Callsign     | Name      | Rank  | Division                         |
 +--------------+-----------+-------+----------------------------------+
@@ -160,11 +160,11 @@ Channel 13 + is public radio space
 +--------------+-----------+-------+----------------------------------+
 | 7 William 6  | Cassie    | DET   | Traffic & Patrol                 |
 +--------------+-----------+-------+----------------------------------+
-
+```
 
 ### LSFR
 
-
+```
 +--------------+--------+-------+----------------------------+
 | Callsign     | Name   | Rank  | Notes                      |
 +--------------+--------+-------+----------------------------+
@@ -172,7 +172,7 @@ Channel 13 + is public radio space
 +--------------+--------+-------+----------------------------+
 | 7S7          | Nikki  | SWAT  | Cross trained, Flight Cert |
 +--------------+--------+-------+----------------------------+
-
+```
 
 ---
 
