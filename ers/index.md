@@ -2,6 +2,11 @@
 
 ---
 
+[Police Procedures](/police)
+
+
+---
+
 ## ERS Or Emergency Response Service.  
 
 This is the overarching name when talking about the Emergency services within the city, as one big group, rather than indunvidual departments. This would also include city services such as the road team.  
@@ -41,6 +46,17 @@ and thus we have to take some liberties in how stuff works
 ---
 
 ## Radio Channels
+
+In the interest of making it easier for our viewers and new pd members and in the interest of being more current and modern we are going back to plain language for radio traffic.  
+***BREVITY is IMPORTANT***  
+So THINK about what you are going to say, THEN say it.  
+Short and simple is the key.  
+Start calling BEFORE you turn on your lights  
+7Mary3-Dispatch, Motor Vehicle Stop, Currently NB Vespucci and SanAndreas, grey honda civic, occupied 1x Male, PlateNumber  
+
+[CISA Guide](https://www.cisa.gov/sites/default/files/publications/PlainLanguageGuide.pdf)
+
+---
 
 
 So for the vast majority of stuff you do, you should be on **COM 1** this channel can be listened into on by anyone who has a radio., this is part of the openness of the city.  
@@ -158,5 +174,17 @@ Channel 13 + is public radio space
 +--------------+--------+-------+----------------------------+
 
 
+---
 
+## Fire Scenarios 
+
+1 Training Structure Fire - Docks (Submarine Warehouse)  
+2 Training Structure Fire (With gas tanks) - Docks (Submarine Warehouse)  
+3 Little Soule gas station fire  
+4 Court House (old?)  
+5 6 7 8 subway  
+9 Plane training LSIA  
+11 Hill near oil deriks  
+12 PD  
+13 Mount near zancudo  
 
