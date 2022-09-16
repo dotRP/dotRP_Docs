@@ -1,5 +1,8 @@
 # dotRP Documentation
 
 
-[Lore](/lore.md)
-[Known Issues](/issues.md)
+[Lore](/lore.md)  
+[Known Issues](/issues.md)  
+[Townhall Archives](/tharch)  
+[Changelogs](/dev/changes)  
+
