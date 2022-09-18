@@ -8,7 +8,7 @@ Please read our [Documentation](https://docs.dotroleplay.com/mrfunctions) For he
 
 __STANDALONE__  
 This allows you to set the following in discord to show when players are playing on the server.  
-You must have a discord application set up as per the docs [here](https://docs.dotroleplay.com/mrfunctions/drp.md)  
+You must have a discord application set up as per the docs [here](https://docs.dotroleplay.com/mrfunctions/drp)  
 ![image](https://docs.dotroleplay.com/mrfunctions/drp.PNG)
 
 ---
@@ -18,7 +18,7 @@ You must have a discord application set up as per the docs [here](https://docs.d
 __STANDALONE__  
 This allows you to create blips anywhere on the map, as well as create map zones to display stuff like a green zone on the map.  
 This is good for when some scripts have forgot blips or you just want a lightweight way to add a zone without a whole script to depend on.  
-[Config](https://docs.dotroleplay.com/mrfunctions/blips.md)
+[Config](https://docs.dotroleplay.com/mrfunctions/blips)
 See Zones bellow
 ![image](https://docs.dotroleplay.com/mrfunctions/zones.jpg)
 
@@ -29,7 +29,7 @@ See Zones bellow
 __STANDALONE__
 Are you fed up with scripts showing car names as ***NULL*** ? Well this allows you to fix that.   
 A Simple Config to fix this issue!  
-[Config](https://docs.dotroleplay.com/mrfunctions/carnames.md)
+[Config](https://docs.dotroleplay.com/mrfunctions/carnames)
 
 ---
 
@@ -38,7 +38,7 @@ A Simple Config to fix this issue!
 __REQUIRES ESX__  
 Simple Script to allow you to add useable items (food, drink, booze, meals) rather than having to manually register useable item every time.  
 Allows you to set what prop is used too!  
-[Config](https://docs.dotroleplay.com/mrfunctions/usableitems.md)
+[Config](https://docs.dotroleplay.com/mrfunctions/usableitems)
 
 ---
 
@@ -77,14 +77,16 @@ This is good for when bodies sometimes go missing when someone dies and EMS arri
 [Dead Finder](https://docs.dotroleplay.com/mrfunctions/dead) ***caveats*** - Can trip some anticheat.  
 
 ---
-## PED YEETER 
+## PED YEETER  
 
-Under construction tries to block certain peds and cars from spawning  
+This stops any ped from spawning in a given location. 
+[Config](https://docs.dotroleplay.com/mrfunctions/pedyeeter)
+
+
 
 ## INFO EVENTS  
 
-Under construction, tires to pass get street name from client to server   
-
+Under construction, tires to pass get street name from client to server  
 
 ---
 
