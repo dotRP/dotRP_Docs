@@ -4,17 +4,47 @@ Please read our [Documentation](https://docs.dotroleplay.com/mrfunctions) For he
 
 ---
 
-
 ## Discord Rich Presence
 
+__STANDALONE__  
 This allows you to set the following in discord to show when players are playing on the server.  
 You must have a discord application set up as per the docs [here](https://docs.dotroleplay.com/mrfunctions/drp.md)  
 ![image](https://docs.dotroleplay.com/mrfunctions/drp.PNG)
 
 ---
 
+## Blips  
+
+__STANDALONE__  
+This allows you to create blips anywhere on the map, as well as create map zones to display stuff like a green zone on the map.  
+This is good for when some scripts have forgot blips or you just want a lightweight way to add a zone without a whole script to depend on.  
+[Config](https://docs.dotroleplay.com/mrfunctions/blips.md)
+See Zones bellow
+![image](https://docs.dotroleplay.com/mrfunctions/zones.jpg)
+
+---
+
+## Car names
+
+__STANDALONE__
+Are you fed up with scripts showing car names as ***NULL*** ? Well this allows you to fix that.   
+A Simple Config to fix this issue!  
+[Config](https://docs.dotroleplay.com/mrfunctions/carnames.md)
+
+---
+
+## Usable Items  
+
+__REQUIRES ESX__  
+Simple Script to allow you to add useable items (food, drink, booze, meals) rather than having to manually register useable item every time.  
+Allows you to set what prop is used too!  
+[Config](https://docs.dotroleplay.com/mrfunctions/usableitems.md)
+
+---
+
 ## Speed Limiter  
 
+__STANDALONE__  
 This allows you to set the max speed of each vehicle class, or set it to be unlimited.  
 This is a hard cap which will stop the vehicle from being able to exceed that speed.  
 [Speed Docs](https://docs.dotroleplay.com/mrfunctions/speed) ***caveats***.  
@@ -23,8 +53,7 @@ This is a hard cap which will stop the vehicle from being able to exceed that sp
 
 ## Trains  
 
-### Choo Choo  
-
+__STANDALONE__  
 This allows you to set if trains spawn and how often.  
 There is not much more to it than that lol.  
 [Train Docs](https://docs.dotroleplay.com/mrfunctions/trains)  
@@ -33,6 +62,7 @@ There is not much more to it than that lol.
 
 ## Traffic  
 
+__STANDALONE__  
 This sets the multipliers for how many peds, cars etc are on the road.  
 You will also be able to set if boats or garbage trucks spawn (TODO)  
 [Traffic](https://docs.dotroleplay.com/mrfunctions/traffic)  
@@ -41,11 +71,20 @@ You will also be able to set if boats or garbage trucks spawn (TODO)
 
 ## DeadFinder
 
+__STANDALONE__  
 This allows you to set a key which wibbles your body when dead, this resets your location in the world.  
 This is good for when bodies sometimes go missing when someone dies and EMS arrives  
 [Dead Finder](https://docs.dotroleplay.com/mrfunctions/dead) ***caveats*** - Can trip some anticheat.  
 
 ---
+## PED YEETER 
+
+Under construction tries to block certain peds and cars from spawning  
+
+## INFO EVENTS  
+
+Under construction, tires to pass get street name from client to server   
+
 
 ---
 
@@ -65,11 +104,12 @@ ANY SUGGESTED CONFIG
 INFO (SEP)  
 ANY NATIVE INFO OR ODDITYS  
 
-***Inline Comments***
-**--Must be**
-Must be a float! -- This means the number must have a decimal place, IE 1.0
-Must be a INT! -- This means the number must be a whole number!
-**--DEF** This is what the default recommended values are! /n
+***Inline Comments***  
+**--Must be**  
+Must be a float! -- This means the number must have a decimal place, IE 1.0  
+Must be a INT! -- This means the number must be a whole number!  
+**--DEF**  
+This is what the default recommended values are!  
 --DEF 300
 
 
@@ -98,15 +138,15 @@ Must be a INT! -- This means the number must be a whole number!
 
 ## TODO DESC & DOCS
 PED YEETER  
-car names
-blips
-discord rich pres (and config)
+
+
+
 info events 
 
 ##  todo docs
-
-
-
+discord rich pres (and config)
+blips
+car names
 
 ## TODO SCRIPTING 
 StopPeds -- Stop Certain peds from spawning  
