@@ -1,10 +1,15 @@
+# MACH & ONYX FiveM Functions
+
 ---
-id: Usable-Items
+## TODO  
+NORMAL BLIPS in blip function
+
+
 ---
 
-# Usable items  
+## Usable items  
 
-This function replaces the need to add the snipped bellow for every item you want to use, the items still need to to be [IN THE DATABASE](../docs/dbitems).  
+This function replaces the need to add the snipped bellow for every item you want to use, the items still need to to be [IN THE DATABASE](/dbitems.md).  
 
 ```lua
 ESX.RegisterUsableItem('fishbait', function(source) //fishbait db item name 
@@ -19,7 +24,7 @@ end)
 
 > Head to the useable items section in the cfg file.  
 
-## About the file  
+### About the file  
 
 > 1)Function Name - Usable Items  
 > 2)Script Location - server/usableitems.lua (Tebex encrypted)  
@@ -90,3 +95,25 @@ UseableItems = {
 ```
 
 ---
+
+## Blips  
+
+This script allows you to add radial (Circle) Zones, Area (Square) Zone and Blips
+
+> Head to the Blips section in the cfg file.  
+
+### About the file  
+
+
+> 1)Function Name - Blips  
+> 2)Script Location - client/blips.lua (Tebex encrypted)    
+> 3)Description - This allows you to add blips are zones to the map  
+> 4)Blip- Set this to true to print Blip creation attempts to CLIENT Console  
+
+
+#### Radial Blips
+
+#### Area Blips
+
+
+#### Normal Blips

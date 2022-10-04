@@ -1,3 +1,6 @@
+---
+id: dotRP-Dev
+---
 # dotRP Dev Documentation
 
 [Core Our Stuff](/docs/core.md)

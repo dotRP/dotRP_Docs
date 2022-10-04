@@ -1,3 +1,6 @@
+---
+id: dotRP-Lore
+---
 # dotRP Lore
 
 ## THE HISTORY OF LOS SANTOS  
