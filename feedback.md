@@ -3,9 +3,8 @@ id: Feedback
 ---
 # Feedback
 
-## Use this page to give us Feedback annon 
+## Please use this page to give us Anonymous Feedback
 
-<!doctype html>
 <html>
 <head>
     <style>
@@ -31,9 +30,9 @@ textarea {
     
 	<input type="hidden" name="code" id="code" value="qQNXEsCN1U71tWVT-3koD0ucofzCpzd_z3ycGcVch84xAzFuG9Q7HA==">
 	<input type="hidden" name="ChannelID" id="ChannelID" value="993945806296076310">
-	<input type="hidden" name="Reply" id="Reply" value="Pog">
-	<input type="hidden" name="Info" id="info" value="Feedback">
-	<input type="hidden" name="name" id="name" value="Feedback">
+	<input type="hidden" name="Reply" id="Reply" value="Feedback Submitted, Please close the tab">
+	<input type="hidden" name="Info" id="info" value="_">
+	<input type="hidden" name="name" id="name" value="_Feedback_">
 	<input type="hidden" name="mode" id="mode" value="Quote">
   <textarea rows="5" cols="80" id="textarea" name="Quote">  </textarea>
 
