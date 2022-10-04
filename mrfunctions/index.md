@@ -12,6 +12,12 @@ You must have a discord application set up as per the docs [here](https://docs.d
 ![image](https://docs.dotroleplay.com/mrfunctions/drp.PNG)
 
 ---
+## Hands Up  
+
+Put Yer hands up, custom keybind, not much more to say!
+No docs for this one, you can change a letter
+
+---
 
 ## Blips  
 
@@ -27,7 +33,7 @@ See Zones bellow
 ## Car names
 
 __STANDALONE__
-Are you fed up with scripts showing car names as ***NULL*** ? Well this allows you to fix that.   
+Are you fed up with scripts showing car names as ***NULL*** ? Well this allows you to fix that.  
 A Simple Config to fix this issue!  
 [Config](https://docs.dotroleplay.com/mrfunctions/carnames)
 
@@ -71,7 +77,7 @@ You will also be able to set if boats or garbage trucks spawn (TODO)
 
 ## DeadFinder
 
-__STANDALONE__  
+__REQUIRES ESX__
 This allows you to set a key which wibbles your body when dead, this resets your location in the world.  
 This is good for when bodies sometimes go missing when someone dies and EMS arrives  
 [Dead Finder](https://docs.dotroleplay.com/mrfunctions/dead) ***caveats*** - Can trip some anticheat.  
@@ -139,17 +145,17 @@ This is what the default recommended values are!
 
 
 ## TODO DESC & DOCS
-PED YEETER  
+
 
 
 
 info events 
 
 ##  todo docs
-discord rich pres (and config)
+discord rich pres (and config) - consider adding switch to remove what the player is doing
 blips
 car names
-
+PED YEETER  
 ## TODO SCRIPTING 
 StopPeds -- Stop Certain peds from spawning  
 StopCars -- Stops Certain vehicles from spawning (most of the time)
