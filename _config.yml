@@ -23,5 +23,6 @@ sidebar:
   - label: New NOC
     children:
       - dotRP-Dev
+  - Feedback
 
 version: v0.0.5
