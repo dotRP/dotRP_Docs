@@ -2,7 +2,7 @@
 id: dotRP-Home
 ---
 
-# dotRP Documentation
+# dotRP Server Info and Docs
 
 
 [Lore](/lore)  

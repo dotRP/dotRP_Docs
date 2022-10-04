@@ -2,7 +2,7 @@
 id: Usable-Items
 ---
 
-# Usable items  
+# MRF Docs Usable items  
 
 This function replaces the need to add the snipped bellow for every item you want to use, the items still need to to be [IN THE DATABASE](../docs/dbitems).  
 
