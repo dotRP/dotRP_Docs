@@ -3,25 +3,25 @@ remote_theme: zendesk/jekyll-theme-zendesk-garden@main
 sidebar: 
   - dotRP-Home
   - label: Our Server
-      children:
+    children:
       - dotRP-Home
       - dotRP-Lore
       - TH-Arch
       - Known-Issues
   - label: Our Polices, Rules, SOPS
-      children:
+    children:
       - dotRP-ERS-Main
       - dotRP-ERS-Flight
       - dotRP-ERS-SAPD-COE      
   - label: Our Docs
-      children:
+    children:
       - core
   - label: Our Scripts
   - label: MACH Raven Functions
-      children:
+    children:
       - MACH-Raven-Functions
       - Usable-Items
   - label: New NOC
-      children:
+    children:
       - dotRP-Dev
 
