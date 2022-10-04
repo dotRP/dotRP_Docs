@@ -1,9 +1,9 @@
 remote_theme: zendesk/jekyll-theme-zendesk-garden@main
 
 sidebar: 
+  - dotRP-Home
   - label: Our Server
     children:
-      - dotRP-Home
       - dotRP-Lore
       - TH-Arch
       - Known-Issues
