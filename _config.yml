@@ -24,3 +24,4 @@ sidebar:
     children:
       - dotRP-Dev
 
+version: v0.0.5
