@@ -5,8 +5,8 @@ id: dotRP-Home
 # dotRP Documentation
 
 
-[Lore](/lore.md)  
-[Known Issues](/issues.md)  
+[Lore](/lore)  
+[Known Issues](/issues)  
 [Townhall Archives](/tharch)  
 [Changelogs](/dev/changes)  
 
