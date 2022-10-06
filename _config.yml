@@ -4,6 +4,7 @@ sidebar:
   - dotRP-Home
   - label: Our Server
     children:
+      - cut
       - dotRP-Lore
       - TH-Arch
       - Known-Issues
