@@ -36,8 +36,7 @@ CVS9/10 Are shit hits fan level of bad
 
 ## Change Freezes 
 
->T1ger Shops (Config)
->Tiger Dealer (Config)
+
 
 
 
