@@ -73,7 +73,7 @@ textarea {
 	
   </div>
   <div>
-    <button>Send Feedback</button>
+<button type="submit">Submit</button> 
   </div>
 </form>
 </body>
