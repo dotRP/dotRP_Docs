@@ -5,38 +5,7 @@ id: dotRP-Apply
 # dotRP Apply
 
 
-<style>
-  /* Add some basic styling to the form */
-  form {
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
 
-  /* Style the input fields */
-  input[type="text"], input[type="email"] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-
-  /* Style the submit button */
-  button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  button[type="submit"]:hover {
-    background-color: #45a049;
-  }
-</style>
 
 <form onsubmit="handleFormSubmit(event)">
   <input type="hidden" name="code" placeholder="GiegdHqaQKE2grIE-yL_ud7F9LBUZpy_ZCWeOTivD-5ZAzFunKRe3Q==" />
@@ -63,7 +32,7 @@ id: dotRP-Apply
     const data = new FormData(event.target);
 
     // Use the data to make a GET request (or use any other method you want)
-    fetch('https://apiv3.m2s.bz/api/dotrpapp?', {
+    fetch('https://api.dotroleplay.com/api/dotrpapp?', {
       method: 'GET'
     });
   }
