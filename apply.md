@@ -56,9 +56,23 @@ id: dotRP-Apply
   <input type="hidden" name="STF" value="955262072369868860"  />
   <input type="text" name="CNAME" placeholder="Char Name" />
   <textarea rows="5" cols="80" id="textarea" name="desc">"Around 300 words about your character"</textarea>
-  <input type="radio" name="CUT" id="cut" value="cut" />
+  <input type="checkbox" name="CUT" id="cut" value="cut" required/>
   <label for="CUT">I Understand CUT</label><br>
+  <input type="checkbox" name="OPEN" id="open" value="Y" required/>
+  <label for="open">I Understand Server is only open Thrus-Sun</label><br>
+  <input type="checkbox" name="AG" id="ag" value="Y" required/>
+  <label for="ag">I am over 18</label><br>
+  <input type="checkbox" name="LS" id="ls" value="Y" required/>
+  <label for="ls">I Understand the server will be live streamed and created into videos</label><br>
+  <input type="checkbox" name="NG" id="ng" value="Y" required/>
+  <label for="NG">I Understand there is no guarantee i am allowed into the server</label><br>
+
+
+  <input type="hidden" name="PDAYS" value="HiddenBox" />
   <input type="text" name="SM" placeholder="Socials" />
+
+
+
 
 <button type="submit">Submit</button>  
 </form>
