@@ -41,7 +41,7 @@ id: dotRP-Apply
 <form onsubmit="handleFormSubmit(event)">
 <input type="hidden" name="code" placeholder="GiegdHqaQKE2grIE-yL_ud7F9LBUZpy_ZCWeOTivD-5ZAzFunKRe3Q==" />
 
-  <input type="number" name="DID" placeholder="DiscordID" />
+  <input type="text" name="DID" placeholder="DiscordID" />
   <input type="hidden" name="catID" placeholder="1027660616481112114"  />
   <input type="hidden" name="DG" placeholder="412414497790361602" />
 
@@ -52,15 +52,14 @@ id: dotRP-Apply
   <form>
   <input type="radio" name="CUT" id="cut" value="cut" />
   <label for="CUT">I Understand CUT</label><br>
-  <label for="javascript">JavaScript</label>
   </form>
-
+<input type="text" name="SM" placeholder="Socials" />
   
 
-  <button type="submit">Submit</button>
+  
 </form>
-<input type="text" name="SM" placeholder="Socials" />
 
+<button type="submit">Submit</button>
 <script>
   function handleFormSubmit(event) {
     // Prevent the default form submission behavior
@@ -70,7 +69,7 @@ id: dotRP-Apply
     const data = new FormData(event.target);
 
     // Use the data to make a GET request (or use any other method you want)
-    fetch('apiv3.m2s.bz/api/dotrpapp?', {
+    fetch('https://apiv3.m2s.bz/api/dotrpapp?', {
       method: 'GET',
       body: data
     });
