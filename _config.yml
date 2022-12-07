@@ -2,6 +2,7 @@ remote_theme: zendesk/jekyll-theme-zendesk-garden@main
 
 sidebar: 
   - dotRP-Home
+  - dotRP-Apply
   - label: Our Server
     children:
       - cut

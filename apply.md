@@ -53,11 +53,11 @@ id: dotRP-Apply
   <input type="text" name="DID" placeholder="DiscordID" />
   <input type="hidden" name="catID" value="1027660616481112114"  />
   <input type="hidden" name="DG" value="412414497790361602" />
-  <input type="hidden" name="STF" value="955262072369868860"  />
+  <input type="hidden" name="STF" value="1020409455466266765"  />
   <input type="text" name="CNAME" placeholder="Char Name" />
   <textarea rows="5" cols="80" id="textarea" name="desc">"Around 300 words about your character"</textarea>
-  <input type="checkbox" name="CUT" id="cut" value="cut" required/>
-  <label for="CUT">I Understand CUT</label><br>
+  <input type="checkbox" name="CUT" id="cut" value="Y" required/>
+  <label for="CUT">I Understand <a href="/cut">CUT</a> </label><br>
   <input type="checkbox" name="OPEN" id="open" value="Y" required/>
   <label for="open">I Understand Server is only open Thrus-Sun</label><br>
   <input type="checkbox" name="AG" id="ag" value="Y" required/>
