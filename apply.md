@@ -40,26 +40,20 @@ id: dotRP-Apply
 
 <form onsubmit="handleFormSubmit(event)">
 <input type="hidden" name="code" placeholder="GiegdHqaQKE2grIE-yL_ud7F9LBUZpy_ZCWeOTivD-5ZAzFunKRe3Q==" />
-
   <input type="text" name="DID" placeholder="DiscordID" />
   <input type="hidden" name="catID" placeholder="1027660616481112114"  />
   <input type="hidden" name="DG" placeholder="412414497790361602" />
-
-
 <input type="hidden" name="STF" placeholder="955262072369868860"  />
   <input type="text" name="CNAME" placeholder="Char Name" />
   <input type="text" name="DESC" placeholder="Around 300 yours about your charater"  />
-  <form>
   <input type="radio" name="CUT" id="cut" value="cut" />
   <label for="CUT">I Understand CUT</label><br>
-  </form>
 <input type="text" name="SM" placeholder="Socials" />
-  
 
-  
+<button type="submit">Submit</button>  
 </form>
 
-<button type="submit">Submit</button>
+
 <script>
   function handleFormSubmit(event) {
     // Prevent the default form submission behavior
