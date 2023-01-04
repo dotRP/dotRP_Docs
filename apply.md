@@ -4,6 +4,10 @@ id: dotRP-Apply
 
 # dotRP Apply
 
+> To find your DiscordID please go into any channel on the DotRP discord and typed ``+discordid`` this should then send you a DM with a number, please put the number only in the DiscordID Field  
+
+
+
 <style>
   /*Add some basic styling to the form*/
   form {
