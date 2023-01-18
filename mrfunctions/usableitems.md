@@ -4,7 +4,7 @@ id: Usable-Items
 
 # MRF Docs Usable items  
 
-This function replaces the need to add the snipped bellow for every item you want to use, the items still need to to be [IN THE DATABASE](../docs/dbitems).  
+This function replaces the need to add the snipped bellow for every item you want to use, the items still need to to be [IN THE DATABASE](../core/dbitems).  
 
 ```lua
 ESX.RegisterUsableItem('fishbait', function(source) //fishbait db item name 
@@ -20,7 +20,7 @@ end)
 > Head to the useable items section in the cfg file.  
 
 > You will also need the following links
-[GTA5 Prop List](https://gtahash.ru/)
+[GTA5 Prop List](https://gtahash.ru/)  
 [GTA Animations](https://alexguirre.github.io/animations-list/)
 
 ## About the file  
