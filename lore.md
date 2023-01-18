@@ -1,7 +1,7 @@
 ---
 id: dotRP-Lore
 ---
-# dotRP Lore
+# dotRP City Lore
 
 ## THE HISTORY OF LOS SANTOS  
 
