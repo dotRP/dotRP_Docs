@@ -6,9 +6,12 @@ sidebar:
   - label: Our Server
     children:
       - cut
-      - dotRP-Lore
       - TH-Arch
       - Known-Issues
+  - label: Lore
+    children: 
+      - dotRP-Lore
+      - dotRP-Shi
   - label: Our Polices, Rules, SOPS
     children:
       - dotRP-ERS-Main

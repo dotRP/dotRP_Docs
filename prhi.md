@@ -36,7 +36,7 @@ They will also provide (or reimburse for) tow cover for any Slaters Super Vehicl
 #### Prometheus Defence Systems – Formally Xerxes Dynamics  
 
 PDS Provides proof of concept defence systems for vehicles and structures, for the purpose of evaluating and demonstrating.  
-To then be passed on to HARM for mass manufacture if required.  
+To then be passed on to PRAR for mass manufacture if required.  
 Current Project; PDSFLR, A System that can be added onto most vehicles to offer some protection against guided missile attacks  
 
 #### Prometheus Aerospace, Land & Sea Systems – Formally SLDS , SASP, SASE, SHSS  
@@ -57,13 +57,13 @@ This includes a fleet of armoured vehicles, fast jets and protected heavy aircra
 ### Formally Under RRI  
 
 #### Prometheus Transport – Formally RRI, SRI, STRI, FDX, SRR  
+
 Mainly used for the import and export of PHI products and the materials used for manufacture.  
 PT Has been used for the emergency import of food, water and other survival products for the state and would happily do the same again.  
 PT Is also capable of transporting stuff around the state by air if needed.  
 Security can be provided by PPS if needed.  
 
-
-#### Prometheus armaments – Formally Hammerhead armaments, SHIA, Daedalus Armaments, RRIA  
+#### Prometheus Armaments PRAR – Formally Hammerhead Armaments, SHIA, Daedalus Armaments, RRIA  
 
 PA Provides all legal arms within the sate of SA, Including the majority of firearms and ammunition used by the SAPD & SAERS.  
 PA Manufacturers most of this out of state and imports it, however we are looking at tooling a warehouse in the city to lower the cost of importing  
