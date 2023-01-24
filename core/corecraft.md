@@ -77,7 +77,7 @@ Jobs = {} //IE Jobs = {"ambulance","police"}
 },
 ```
 
-> Crafting Sytax (for the lazy / automaters see after this section)
+> Crafting Syntax (for the lazy / automaters see after this section)
 
 ```
 ['bandage'] = { -- This must match the item name
