@@ -14,7 +14,7 @@ This brings the following companies under the one banner and proprietor (Slater 
 
 #### Slaters Catcafe  
 
-Location: Little Seoul. 
+Location: Little Seoul.  
 A Small Cafe with cute cats allowed to roam the property and interact with the customers.
 High volume of sales with low profits, generating huge amounts of income whilst supplying the city with low-cost food and cafe items.
 

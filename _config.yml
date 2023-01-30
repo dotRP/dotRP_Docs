@@ -2,7 +2,10 @@ remote_theme: zendesk/jekyll-theme-zendesk-garden@main
 
 sidebar: 
   - dotRP-Home
-  - dotRP-Apply
+  - label: Start Here
+    children:
+      - dotRP-Faq 
+      - dotRP-Apply
   - label: Our Server
     children:
       - cut
@@ -11,7 +14,15 @@ sidebar:
   - label: Lore
     children: 
       - dotRP-Lore
-      - dotRP-Shi
+      - label: Characters
+        children:
+        - Slater
+      - label: Places
+        children:
+        - dotRP-Shi
+      - label: Things
+        children:
+        - Kraken
   - label: Our Polices, Rules, SOPS
     children:
       - dotRP-ERS-Main
@@ -30,4 +41,4 @@ sidebar:
       - dotRP-Dev
   - Feedback
 
-version: v0.0.8
+version: v0.1.0
