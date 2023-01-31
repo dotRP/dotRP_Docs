@@ -14,15 +14,15 @@ sidebar:
   - label: Lore
     children: 
       - dotRP-Lore
-      - label: Characters
-        children:
-        - Slater
-      - label: Places
-        children:
-        - dotRP-Shi
-      - label: Things
-        children:
-        - Kraken
+   - label: Characters
+     children:
+      - Slater
+   - label: Places
+     children:
+      - dotRP-Shi
+   - label: Things
+     children:
+      - Kraken   
   - label: Our Polices, Rules, SOPS
     children:
       - dotRP-ERS-Main
