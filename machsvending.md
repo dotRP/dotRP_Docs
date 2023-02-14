@@ -4,6 +4,8 @@ id: MachsVedning
 
 # MachsVending 
 
+## UNDER CONSTRUCTION    
+
 Please read our [Documentation](https://docs.dotroleplay.com/MachsVending) For help with configuration  
 
 ---
@@ -28,10 +30,6 @@ Our Vending Machine job script is a great way to add a unique and engaging job f
 - Low Stock Blips
 - From the job menu or boss pc, get the locations of all machines with a low stock to show on your map  
 
-### Coming Soon  
-
-- Boss Menu / Society  
-- Warehouse to get stock from  
 
 ## Requirements  
 
@@ -61,13 +59,14 @@ We use [Warehouse Port](https://www.gta5-mods.com/maps/mlo-warehouse-port-add-on
 
 Chat GPT Generated a job description for this script  
 
-```
-"Are you ready to quench the thirst of the citizens of Los Santos? Join our team as a Vending Machine Operator! As a Vending Machine Operator, you will be responsible for restocking, maintaining and collecting money from vending machines located throughout the city. You will interact with a diverse range of customers, from thirsty construction workers to busy office executives, and provide them with a variety of refreshing drinks and snacks.
 
-Using our qtarget and ESX based system, you will be able to manage your inventory, restock machines, and collect payments. You will need to be quick on your feet, able to handle cash and interact with customers in a professional manner. Your success will depend on your ability to maintain and restock machines in a timely manner, keeping them in top condition and stocked with the latest products.
+"Are you ready to quench the thirst of the citizens of Los Santos? Join our team as a Vending Machine Operator! As a Vending Machine Operator, you will be responsible for restocking, maintaining and collecting money from vending machines located throughout the city. You will interact with a diverse range of customers, from thirsty construction workers to busy office executives, and provide them with a variety of refreshing drinks and snacks.  
 
-If you're looking for a dynamic job with plenty of interaction and opportunities to work independently, then the Vending Machine Operator role is for you. Apply now and join our team today!"
-```
+Using our qtarget and ESX based system, you will be able to manage your inventory, restock machines, and collect payments. You will need to be quick on your feet, able to handle cash and interact with customers in a professional manner. Your success will depend on your ability to maintain and restock machines in a timely manner, keeping them in top condition and stocked with the latest products.  
+
+If you're looking for a dynamic job with plenty of interaction and opportunities to work independently, then the Vending Machine Operator role is for you. Apply now and join our team today!"  
+
+
 
 
 ### TODO
@@ -76,3 +75,6 @@ If you're looking for a dynamic job with plenty of interaction and opportunities
 - add cash to society 
 - order stock 
 - del vech
+- Boss Menu / Society  
+- Warehouse to get stock from  
+

@@ -32,8 +32,8 @@ sidebar:
     children:
       - core
   - label: Our Scripts
-  - label: MACH Raven Functions
     children:
+      - MachsVedning
       - MACH-Raven-Functions
       - Usable-Items
   - label: New NOC
