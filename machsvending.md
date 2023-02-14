@@ -2,13 +2,16 @@
 id: MachsVedning
 ---
 
-# MachsVending 
+# Machs Vending [ESX]
 
-## UNDER CONSTRUCTION    
+## UNDER CONSTRUCTION  
 
 Please read our [Documentation](https://docs.dotroleplay.com/MachsVending) For help with configuration  
 
 ---
+
+[Get it on tebex - TODO](https://store.dotroleplay.com/) - NOT YET FOR SAKE
+
 ## Description  
 
 Introducing Machs Vending, a ESX Based job script for FiveM! This script is perfect for those looking to add more dynamic and interactive jobs to their servers.  
@@ -18,7 +21,7 @@ This script allows your players to manage company inventory, restock machines, a
 
 Our Vending Machine job script is a great way to add a unique and engaging job for your players, and give them an opportunity to make money in a fun and interactive way. With the script, your players can become entrepreneurs, managing their own vending machine empire and building their reputation throughout the city.
 
-> Generated the ***DESCRIPTION*** In chatGPT and then cleaned it up. Because I am terrible with words.
+> Generated the ***DESCRIPTION*** In chatGPT and then cleaned it up. Because I am terrible with words.  
 > "*" I Believe the script should be drop in replaceable with OX_Target, however this is untested and will require YOU To modify the script  
 
 ## Features
@@ -29,7 +32,13 @@ Our Vending Machine job script is a great way to add a unique and engaging job f
 - Cash - The money needs to be collected from each machine  
 - Low Stock Blips
 - From the job menu or boss pc, get the locations of all machines with a low stock to show on your map  
+- Works out the box with the ***Default*** GTA Vending props: Coffee Machine, Fixed Coffee Carts , Sprunk & Cola, Snacks, Raine Water and most water coolers
 
+## Video 
+
+TODO Add a video here of it being used
+
+---
 
 ## Requirements  
 
