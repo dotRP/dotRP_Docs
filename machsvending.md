@@ -6,7 +6,9 @@ id: MachsVedning
 
 ## UNDER CONSTRUCTION  
 
-Please read our [Documentation](https://docs.dotroleplay.com/MachsVending) For help with configuration  
+Please read our [Documentation](https://docs.dotroleplay.com/machsvending) For help with configuration  
+
+![image](https://docs.dotroleplay.com/machsvendingheader.png)
 
 ---
 
@@ -32,11 +34,11 @@ Our Vending Machine job script is a great way to add a unique and engaging job f
 - Cash - The money needs to be collected from each machine  
 - Low Stock Blips
 - From the job menu or boss pc, get the locations of all machines with a low stock to show on your map  
-- Works out the box with the ***Default*** GTA Vending props: Coffee Machine, Fixed Coffee Carts , Sprunk & Cola, Snacks, Raine Water and most water coolers
+- Works out the box with the ***Default*** GTA Vending props: Coffee Machine, Fixed Coffee Carts , Sprunk & Cola, Snacks, Raine Water, Slush Machines and most water coolers
 
-## Video 
+## Video  
 
-TODO Add a video here of it being used
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DId1UYTBmBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 
 ---
 
@@ -52,22 +54,29 @@ We use [Warehouse Port](https://www.gta5-mods.com/maps/mlo-warehouse-port-add-on
 [oxlib](https://github.com/overextended/ox_lib/)  
 [oxmysql](https://github.com/overextended/oxmysql)  
 [ESX](https://github.com/esx-framework/esx_core) This requires EX_Extended for stuff such as ESX.TriggerServerCallback  
+[nh-keyboard](https://github.com/whooith/nh-keyboard) - For boss PC inputs, have included our build in the zip as i know this is one that can be funky with versions.  
+[nh-keyboard our version](https://docs.dotroleplay.com/downloads/nh-keyboard.zip)
 
 ## Installation   
 
+- Download the ZIP File from Keymaster.  
+  It should be called MachsVendingVXXX With the XXX being a version number  
+- Unzip The Zip File  
+- Copy the "MachsVending" folder into your Resources folder  
+- Run Vending.SQL - You may have to edit the items section for your server  
+- Make sure you set "JobMenu" Key bind near the top of the Config File, as this will require client side changes if it needs to be changed  
+- add "Start MachsVending" to your config, this needs to be started AFTER ESX,qtarget,oxlib, oxmsql, nh-keyboard. It Runs fine from a [category]  
 
+## Known Issue
 
+-When restarting the script often (such as testing when adding new machines/items) the Stock ped will sometimes show the menu for spawning a truck. A further restart fixes this. I have not had this happen naturally 
+-Normal trickiness targeting stuff. This is a normal Targeting thing, just increase the distance variables in targeting.lua
 
+---
 
-
-
-
-
-
-## Job Description 
+## Job Description  
 
 Chat GPT Generated a job description for this script  
-
 
 "Are you ready to quench the thirst of the citizens of Los Santos? Join our team as a Vending Machine Operator! As a Vending Machine Operator, you will be responsible for restocking, maintaining and collecting money from vending machines located throughout the city. You will interact with a diverse range of customers, from thirsty construction workers to busy office executives, and provide them with a variety of refreshing drinks and snacks.  
 
@@ -75,15 +84,19 @@ Using our qtarget and ESX based system, you will be able to manage your inventor
 
 If you're looking for a dynamic job with plenty of interaction and opportunities to work independently, then the Vending Machine Operator role is for you. Apply now and join our team today!"  
 
+### TODO & Coming Soon
+
+- Add Cup Machines
+---
+
+## Documentation  
+
+### Functions  
 
 
 
-### TODO
-- Add Slush machines / Cup Machines
-- Disposable Cups 
-- add cash to society 
-- order stock 
-- del vech
-- Boss Menu / Society  
-- Warehouse to get stock from  
 
+
+
+
+### Adding new machine type  
