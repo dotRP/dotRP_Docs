@@ -107,7 +107,7 @@ ESX_OBJECT = 'esx:getSharedObject', --if you know what this is, you know if you 
 #### Debugging  
 
 ```lua
-TargetDebug=false,  --This turns on debugging polys for objects that support it, must also be enable in targeting config.  
+TargetDebug = false,  --This turns on debugging polys for objects that support it, must also be enable in targeting config.  
 Debug = true, -- This is script debugging, only needs to be on when you need to debug  
 ```
 
@@ -128,7 +128,7 @@ MVSociety = "society_vend", -- Society name, must match whats in the "addon_acco
 SocietyJobName = "vend", -- Job Name, must match whats in "jobs" Table you probably don't need to change this
 SocietyJobNameLabel = "Sharks Vending", -- Job Label. used for some UI/Popups, can be anything
 Jobs = {["phi"] = 0, ["vend"] = 0}, --Jobs that can access the machines for stocking etc, ["jobname"] = rank -- Can be multi jobs
-BossJob = {["phi"] = 2, ["vend"] =2 }, -- Jobs that can access the boss actions
+BossJob = {["phi"] = 2, ["vend"] = 2 }, -- Jobs that can access the boss actions
 CashRequiredItem = "reaperskey" -- Item Required To Take Cash
 ```
 
@@ -137,10 +137,11 @@ CashRequiredItem = "reaperskey" -- Item Required To Take Cash
 [FiveM Blips](https://docs.fivem.net/docs/game-references/blips/)  
 
 ```lua
-AmmountPerVend =1, -- How Much is given each time something is brought.
+AmmountPerVend = 1, -- How Much is given each time something is brought.
 Currency = "$", --Whats shown for cash stuff IE "you have been given $10" when withdrwaing cash from machines 
 StartStock = 22, --How much stock the machines should start with, keep in mind if the machine hasn't been used before, this is how much stock that will materialize in it
-LowStock = 10, -- low stock value, at what point are the machines considered to have low stock, this is the value which will have the machines show on the map when "show low stock"
+LowStock = 10, -- low stock value, at what point are the machines considered to have low stock. machines show on the map when "show low stock" in job menu is pressed
+-- This is if ANY of the items in the machine have less than this value.
 LowStockBlip = 752, -- Blips for machines with low stock (when menu option selected), 752 is alien ship
 HQBlip = 752, -- Blip for the HQ Location
 BlipColour = 2, -- Colour of HQ Blip
@@ -213,10 +214,137 @@ TruckB_Text = "Pound Me?", -- More text
 
 ### Functions  
 
+#### Client Functions  
 
+##### GetStreetName
 
+> Pass a set of coords to this, it will then break the coords into xyz
+> it will then return the streetname, and cross street if there is one  
 
+```lua
+function GetStreetName(coords)
+  local x,y,z = table.unpack(coords)
+  local streetName, crossing = GetStreetNameAtCoord(x, y, z)
+  streetName = GetStreetNameFromHashKey(streetName)
+  ClientDebugPrint("Cross "..crossing)
+  local message = ""
+  if crossing ~= nil and crossing ~= 0 then
+    crossing = GetStreetNameFromHashKey(crossing)
+    message = streetName .. "_" .. crossing
+  else
+    message = streetName
+  end
+  return message
+end
+```
 
+##### SendTextMessage(msg)
+
+> This is where you can change notifications for the script, can be changed to whatever
+> We use bulletin by default
+
+```lua
+function SendTextMessage(msg)
+  exports.bulletin:SendWarning(msg, 5000)
+end
+```
+
+##### BuildVendName(coords,type)
+
+>The vending machine names are based of its type and its location, you probably dont need to change this unless your database doesn't like "_"
+
+```lua
+function BuildVendName(coords,type)
+  local VendingName = type.."_"..coords.x.."_"..coords.y.."_"..coords.z
+  return VendingName
+end
+```
+
+##### ClientDebugPrint(msg)
+
+>This is how we do client side debugging, if you need to do weird stuff with debug messages you can do it here
+
+```
+function ClientDebugPrint(msg)
+  if Config.Debug == true then 
+    print(msg)
+  end
+end
+```
+
+##### round(n) - Also in server side  
+
+>Simple rounding function, pass a number to it and it will round it
+
+```lua
+function round(n)
+  return n % 1 >= 0.5 and math.ceil(n) or math.floor(n)
+end
+
+```
+
+#### Server Functions
+
+##### PlayerHasItem(source,item)
+
+>Checks if player has an item, change this if getInventoryItem(item) doesn't work for you
+
+```lua
+function PlayerHasItem(source,item)
+local xPlayer = ESX.GetPlayerFromId(source)
+local hasitem = xPlayer.getInventoryItem(item)
+if hasitem.count > 0 then
+  return true
+else 
+  return false
+end
+end
+```
+
+##### AddItem(source, item, ammount) & PlayerRemoveItem(source,item,ammount)
+
+> Change these if removeInventoryItem(item, ammount) and addInventoryItem(item, ammount) don't work in your server 
+
+```lua
+function AddItem(source,item,ammount)
+  local xPlayer = ESX.GetPlayerFromId(source)
+  xPlayer.addInventoryItem(item, ammount)
+end
+
+function PlayerRemoveItem(source,item,ammount)
+  local xPlayer = ESX.GetPlayerFromId(source)
+  xPlayer.removeInventoryItem(item, ammount)
+end
+```
+
+##### AddPlayerCash(source,cash), RemovePlayerCash(source,ammount) 
+
+> Change these if addMoney(cash) or removeMoney(ammount) don't work for you 
+
+```lua
+function AddPlayerCash(source,cash)
+  ServerDebugPrint("trying to add "..cash.." to "..source)
+  local xPlayer = ESX.GetPlayerFromId(source)
+  xPlayer.addMoney(cash)
+end
+function RemovePlayerCash(source,ammount)
+  local xPlayer = ESX.GetPlayerFromId(source)
+  xPlayer.removeMoney(ammount)
+end
+
+```
+
+##### ServerDebugPrint(msg)
+
+>This is how we do server side debugging, if you need to do weird stuff with debug messages you can do it here
+
+```lua
+function ServerDebugPrint(msg)
+  if Config.Debug == true then 
+    print(msg)
+  end
+end
+```
 
 
 ### Adding new machine type  
