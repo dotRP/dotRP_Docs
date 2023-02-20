@@ -86,9 +86,11 @@ Using our qtarget and ESX based system, you will be able to manage your inventor
 
 If you're looking for a dynamic job with plenty of interaction and opportunities to work independently, then the Vending Machine Operator role is for you. Apply now and join our team today!"  
 
-### TODO & Coming Soon
+### TODO & Coming Soon  
 
 - Add Cup Machines
+- Add Police Notfiy
+  
 ---
 
 ## Documentation  
