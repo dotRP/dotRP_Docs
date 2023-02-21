@@ -4,7 +4,8 @@ id: MachsVedning
 
 # Machs Vending [ESX]  
 
-[![GitHub version](https://badge.fury.io/gh/dotRP%2FdotRP_VersionTracking.svg)](https://badge.fury.io/gh/dotRP%2FdotRP_VersionTracking)  
+[![GitHub version](https://badge.fury.io/gh/dotRP%2FdotRP_VersionTracking.svg)](https://badge.fury.io/gh/dotRP%2FdotRP_VersionTracking)
+[![wakatime](https://wakatime.com/badge/github/dotRP/MachsVending.svg)](https://wakatime.com/badge/github/dotRP/MachsVending)  
 
 ## UNDER CONSTRUCTION  
 
@@ -14,7 +15,7 @@ Please read our [Documentation](https://docs.dotroleplay.com/machsvending) For h
 
 ---
 
-[Get it on tebex - TODO](https://store.dotroleplay.com/) - NOT YET FOR SAKE
+[Get it on tebex - TODO](https://store.dotroleplay.com/) - NOT YET FOR SALE
 
 ## Description  
 
@@ -37,6 +38,9 @@ Our Vending Machine job script is a great way to add a unique and engaging job f
 - Low Stock Blips
 - From the job menu or boss pc, get the locations of all machines with a low stock to show on your map  
 - Works out the box with the ***Default*** GTA Vending props: Coffee Machine, Fixed Coffee Carts , Sprunk & Cola, Snacks, Raine Water, Slush Machines and most water coolers
+- Theft - People can break into the machines and steal money  
+  Minigame - Works with some hacking/lockpick minigames
+- Police Notify ***Function*** - A Function for you to implement a dispatch / PD notification, works out the box with CORE_DISPATCH 
 
 ## Video  
 
@@ -52,14 +56,15 @@ We use [Warehouse Port](https://www.gta5-mods.com/maps/mlo-warehouse-port-add-on
 
 ### Scripts  
 
-[QTarget](https://github.com/overextended/qtarget) However [OXTarget](https://github.com/overextended/ox_target) ***should*** work, but is untested.  and will require you to change all instances of "qtarget" to "ox_target"  
-[oxlib](https://github.com/overextended/ox_lib/)  
-[oxmysql](https://github.com/overextended/oxmysql)  
-[ESX](https://github.com/esx-framework/esx_core) This requires EX_Extended for stuff such as ESX.TriggerServerCallback  
-[nh-keyboard](https://github.com/whooith/nh-keyboard) - For boss PC inputs, have included our build in the zip as i know this is one that can be funky with versions.  
-[nh-keyboard our version](https://docs.dotroleplay.com/downloads/nh-keyboard.zip)
+- [QTarget](https://github.com/overextended/qtarget) However [OXTarget](https://github.com/overextended/ox_target) ***should*** work, but is untested.  and will require you to change all instances of "qtarget" to "ox_target"  
+- [oxlib](https://github.com/overextended/ox_lib/)  
+- [oxmysql](https://github.com/overextended/oxmysql)  
+- [ESX](https://github.com/esx-framework/esx_core) This requires EX_Extended for stuff such as ESX.TriggerServerCallback  
+- [nh-keyboard](https://github.com/whooith/nh-keyboard) - For boss PC inputs, have included our build bellow as i know this is one that can be funky with versions.  
+- [nh-keyboard our version](https://docs.dotroleplay.com/downloads/nh-keyboard.zip)
+- [UTK Datahack](https://github.com/utkuali/datacrack) - optional for hacking minigame
 
-## Installation   
+## Installation  
 
 - Download the ZIP File from Keymaster.  
   It should be called MachsVendingVXXX With the XXX being a version number  
@@ -89,7 +94,7 @@ If you're looking for a dynamic job with plenty of interaction and opportunities
 ### TODO & Coming Soon  
 
 - Add Cup Machines
-- Add Police Notfiy
+- Collectable tax
   
 ---
 
@@ -97,7 +102,7 @@ If you're looking for a dynamic job with plenty of interaction and opportunities
 
 ### Config  
 
-> There is quite a few text entries in the database, not documenting here as it should be easy enough to work out what they are for and they can mostly be treated as where you would change translations.  
+> There is quite a few text entries in the config, not documenting here as it should be easy enough to work out what they are for and they can mostly be treated as where you would change translations.  
 > We Also use the database heavily in this, so for instance each vending machine has its own column for tracking each possible stock item. So adding items will require you to add columns in the database.  
 
 #### ESX Shared Object  
@@ -132,6 +137,35 @@ SocietyJobNameLabel = "Sharks Vending", -- Job Label. used for some UI/Popups, c
 Jobs = {["phi"] = 0, ["vend"] = 0}, --Jobs that can access the machines for stocking etc, ["jobname"] = rank -- Can be multi jobs
 BossJob = {["phi"] = 2, ["vend"] = 2 }, -- Jobs that can access the boss actions
 CashRequiredItem = "reaperskey" -- Item Required To Take Cash
+```
+
+#### Crime
+<!-- Be gay and do crimes, many of a friend would say -->
+> Set if you want the machines to be able to be robbed here.  
+> See "PoliceAlert(coords,type)" under functions on how to set PD notifications  
+
+```lua
+----Crime
+Rob = true, -- IF this machines can be robbed
+PDNotify = true, -- Should it notify PD? You need to have set your own notify system. Works default with core_dispatch 
+RequirePick = true,
+RandomTake = true, --should the ammount taken be random based on min max
+MaxTake = 20, --the most someone can take from a machine
+MinTake = 0, 
+NoMoneyStolenText = "Lol theres nothing in here, say hi to PD for me",
+Taken = "You Have Stole ",
+--LockPickItem = "lockpick", --This could be set to hackerlaptop if you are useing a hacky minigame
+LockPickItem = "laptop_h",
+Failed = "You Failed to pick lol ",
+NoItem = "You Need a ", --LockPickItem
+--UsebaguscodestudioLockpick = false, --not convinced this was right
+UseUTKualiDatacrack = true,
+CustomLock = false,
+NoMinigame = false, -- Disables Mini game, but adds the delay bellow 
+NoMiniGameDelay == 10000, --Adds a 10 second delay when mini game is turned off + loop delay (hidden counter), slows spam robbing 
+BlackMoney = true, --Should it give black/red/dirty etc  
+BlackMoneyAccountName = "black_money", -- See What is in your ES_Extended config
+
 ```
 
 #### Stock  
@@ -220,7 +254,7 @@ TruckB_Text = "Pound Me?", -- More text
 
 ##### GetStreetName
 
-> Pass a set of coords to this, it will then break the coords into xyz
+> Pass a set of coords to this, it will then break the coords into xyz  
 > it will then return the streetname, and cross street if there is one  
 
 ```lua
@@ -239,6 +273,32 @@ function GetStreetName(coords)
   return message
 end
 ```
+
+##### LockPick()
+
+>This is where you add your lockpick script as a minigame, you will have to make it so the script will set GameWin to true, it didn't seem to like returning true and scripts such as utk were being weird with that as it is. 
+> if you wish to disable this, set NoMinigame to true in the config  
+> make sure you set the other lockpick options to false
+> if you don't want to have them use a lockpick make sure RequirePick is set to false
+
+```lua
+function LockPick()
+if Config.UseUTKualiDatacrack then
+
+  TriggerEvent("datacrack:start", 3, function(result)
+  ClientDebugPrint("rt Has Game Been Won "..tostring(result))
+  GameWin = result
+  end)
+elseif Config.CustomLock then 
+  ------Set your lockpick script here / other minigame
+elseif Config.NoMinigame then
+  GameWin = true
+elseif Config.UsebaguscodestudioLockpick then
+  result = exports['lockpick']:startLockpick(1) 
+  GameWin = result
+end
+```
+
 
 ##### SendTextMessage(msg)
 
@@ -284,6 +344,31 @@ function round(n)
 end
 
 ```
+
+##### PoliceAlert(coords,type)
+
+> This passes info through to whatever dispatch script of your choice, by default it uses core dispatch. The Cords and type (machine type ie "coffee") would likley be enough, 
+> This fires as soon as someone presses the "rob" button, you may wish to add a citizen.wait(5000) to add a delay. do this the line before you trigger the alert
+
+```lua
+function PoliceAlert(coords,type)
+if Config.PDNotify then 
+streetName = GetStreetName(coords)
+Message = "Someone is trying to rob a "..type.." machine at "..streetName
+
+TriggerServerEvent("core_dispatch:addMessage",
+Message,
+    {coords[1], coords[2], coords[3]},
+    'police',
+    5000,
+    11,
+    5
+)
+end
+
+end
+```
+
 
 #### Server Functions
 
@@ -350,3 +435,44 @@ end
 
 
 ### Adding new machine type  
+
+
+
+
+
+
+
+
+
+## Change Log  
+
+### 21 Feb 23 | v1.0.8  
+
+- Crime - you can now steal money out of the machines
+- Police Notify - Crimes notify police (well can be set up to)
+- Hacking Minigame - Can integrate with UTK Datahack for hacking minigame, should be able to support any of them  
+
+
+#### v1.0.8 Docs  
+
+-Crime, notify functions
+-Added Change log
+-Formatting and spelling
+-Updated Requirements and features
+-Removed PD notify and added tax removal to TODO
+-Versions.txt update
+
+### 19 Feb 23 | v1.0.7  
+
+- Version Check added
+- Test fix for "all stock" not showing
+- Spicy Cola fixed (dang spelling)
+- Added more coffee machine props, now includes some of the ones in offices
+
+#### v1.0.7 Docs  
+
+-Added Functions
+-Added config info
+-Updated TODO
+-Formatting and spelling
+-Versions.txt update
