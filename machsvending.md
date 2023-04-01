@@ -11,7 +11,7 @@ id: MachsVedning
 
 Please read our [Documentation](https://docs.dotroleplay.com/machsvending) For help with configuration  
 
-![image](https://docs.dotroleplay.com/machsvendingheader.png)
+![image](https://docs.dotroleplay.com/machsvendingheader.png)  
 
 ---
 
@@ -46,7 +46,7 @@ Our Vending Machine job script is a great way to add a unique and engaging job f
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DId1UYTBmBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
 
----
+---  
 
 ## Requirements  
 
@@ -248,6 +248,8 @@ TruckB_Model = "pounder", -- Truck 2
 TruckB_Text = "Pound Me?", -- More text
 ```
 
+---
+
 ### Functions  
 
 #### Client Functions  
@@ -284,7 +286,6 @@ end
 ```lua
 function LockPick()
 if Config.UseUTKualiDatacrack then
-
   TriggerEvent("datacrack:start", 3, function(result)
   ClientDebugPrint("rt Has Game Been Won "..tostring(result))
   GameWin = result
@@ -455,24 +456,24 @@ end
 
 #### v1.0.8 Docs  
 
--Crime, notify functions
--Added Change log
--Formatting and spelling
--Updated Requirements and features
--Removed PD notify and added tax removal to TODO
--Versions.txt update
+- Crime, notify functions
+- Added Change log
+- Formatting and spelling
+- Updated Requirements and features
+- Removed PD notify and added tax removal to TODO
+- Versions.txt update
 
 ### 19 Feb 23 | v1.0.7  
 
-- Version Check added
-- Test fix for "all stock" not showing
-- Spicy Cola fixed (dang spelling)
-- Added more coffee machine props, now includes some of the ones in offices
+- Version Check added  
+- Test fix for "all stock" not showing  
+- Spicy Cola fixed (dang spelling)  
+- Added more coffee machine props, now includes some of the ones in offices  
 
 #### v1.0.7 Docs  
 
--Added Functions
--Added config info
--Updated TODO
--Formatting and spelling
--Versions.txt update
+- Added Functions  
+- Added config info  
+- Updated TODO  
+- Formatting and spelling  
+- Versions.txt update  
